@@ -2,24 +2,24 @@
     <form action="/supplier/edit/{{suppliers._id}}" method="post" class="register">
         <h1 class="text text-primary text-uppercase">Edit supplier</h1>
 
-        <label for="">Supplier Name: </label><br>
+        <label for="">Supplier Name: </label>
         <input type="text" name="supplierName" value="{{ suppliers.supplierName }}">
         <br><br>
 
-        <label for="">Contact Number: </label><br>
+        <label for="">Contact Number: </label>
         <input type="tel" name="phone" value="{{ suppliers.phone }}" min="1000000000" max="999999999999">
         <br><br>
 
-        <label for="">Email</label><br>
+        <label for="">Email</label>
         <input type="email" name="email" value="{{ suppliers.email }}">
         <br><br>
 
-        <label for="">Address: </label><br>
+        <label for="">Address: </label>
         <input type="text" name="address" value="{{ suppliers.address }}">
         <br><br>
 
-        <label for="">Description: </label><br>
-        <input type="text" name="description" value="{{ suppliers.description }}"><br><br>
+        <label for="">Description: </label>
+        <input type="text" name="description" value="{{ suppliers.description }}">
         <br><br>
         
         <input type="submit" value="Edit">
