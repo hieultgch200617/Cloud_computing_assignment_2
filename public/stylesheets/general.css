@@ -1,0 +1,6 @@
+body{
+    background-image: url('/images/background.jpg');
+}
+h1, h2, h5{
+    font-family:cursive;
+}

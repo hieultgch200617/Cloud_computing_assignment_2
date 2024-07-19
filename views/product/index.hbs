@@ -1,0 +1,28 @@
+<center><h2>Product Management</h2></center>
+<a class="btn btn-primary mb-3" href="/product/add">Add new product</a>
+<table class="list">
+    <tr>
+        <th>Product name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Product Image</th>
+        <th>Category</th>
+        <th>Supplier</th>
+        <th>Options</th>
+    </tr>
+        {{#each productList }}
+    <tr>
+        <td>{{ productName }}</td>
+        <td>{{ price }} VND</td>
+        <td>{{ description }}</td>
+        <td><img src="/images/{{ avatar}}" width="100" height="100"></td>
+        <td>{{ category.categoryName }}</td>
+        <td>{{ supplier.supplierName }}</td>
+        <td>
+            <a class="btn btn-success" href="/product/edit/{{ _id }}">Edit</a>
+            <br>
+            <a class="btn btn-danger" href="/product/delete/{{ _id }}">Delete</a>
+        </td>
+    </tr>
+        {{/each}}
+</table>

@@ -1,0 +1,10 @@
+<center><h2>All Product</h2></center>
+    {{#each productList }}
+        <div class="card" style="width: 20rem; display:inline-block; margin: 1rem; text-align:center; justify-content: center;">
+			<a href="/product/detail/{{ _id }}"><img src="/images/{{ avatar }}" class="card-img-top" style="width: 20rem; height: 20rem;"></a>
+		    <div class="card-body">
+				<center><h5 class="card-title">{{ productName }}</h5></center>
+				<center><p class="card-text"> {{ price }}  VND</p></center>
+			</div>
+	    </div>
+    {{/each}}>

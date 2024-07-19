@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.register h2 {
+    text-align: center  ;
+    color: #333;
+}
+
+.register {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.register label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.register input[type="text"],
+.register input[type="number"],
+.register input[type="email"],
+.register input[type="tel"],
+.register select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.register input[type="submit"] {
+    background-color: #f96bbb;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.register input[type="submit"]:hover {
+    background-color: #f96bbb;
+}
+
+.register input[type="submit"]:focus {
+    outline: none;
+}
+
+.error {
+    color: red;
+}

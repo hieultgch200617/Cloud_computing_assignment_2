@@ -1,0 +1,20 @@
+table {
+    border-collapse: collapse;
+    background-color:antiquewhite;
+    vertical-align: top;
+    }
+
+table.list {
+    width: 100%;
+}
+
+table.list tr td {
+    border: 1px solid #999999;
+}
+
+table.list tr th {
+    border: 1px solid #0055DD;
+    background: #0055DD;
+    color: white;
+    text-align: left;
+}

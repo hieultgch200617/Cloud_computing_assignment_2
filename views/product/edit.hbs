@@ -1,0 +1,14 @@
+<form action="/product/edit/{{products._id}}" method="post" class="register">
+    <center><h1>Edit Product</h1></center>
+    <center><img src="/images/{{ products.avatar}}" width="300" height="300"></center>
+    <label for="">Product Name: </label>
+    <input type="text" name="productName" value="{{ products.productName }}">
+    <br><br>
+    <label for="">Price: </label>
+    <input type="number" name="price" value="{{ products.price }}">
+    <br><br>
+    <label for="">Description: </label>
+    <input type="text" name="description"value="{{ products.description }}">
+    <br><br>
+    <input type="submit" value="Edit">
+</form>

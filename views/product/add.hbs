@@ -1,0 +1,35 @@
+<div class="container text-center col-md-6">
+    <form action="/product/add" method="post" enctype="multipart/form-data" class="register">
+        <h1 class="text text-primary text-uppercase">Add new product</h1>
+
+        <label for="">Product Name: </label>
+        <input class="form-control"type="text" name="productName">
+
+        <label for="">Price: </label>
+        <input class="form-control" type="number" name="price"><br>
+
+        <label for="">Description: </label>
+        <input class="form-control" type="text" name="description"><br>
+
+        <label for="">Product Image: </label>
+        <input class="form-control" type="file" name="avatar" id="avatar"><br>
+
+        <label for="">Category: </label>
+        <select class="form-control" name="category" id="">
+        {{#each categories }}
+        <option value="{{ _id }}">{{ categoryName }}</option>
+        {{/each}}
+        </select>
+        <br>
+
+        <label for="">Supplier: </label>
+        <select class="form-control" name="supplier" id="">
+        {{#each suppliers }}
+        <option value="{{ _id }}">{{ supplierName }}</option>
+        {{/each}}
+        </select>
+        <br>
+        
+        <input type="submit" value="Add">
+    </form>
+</div>
