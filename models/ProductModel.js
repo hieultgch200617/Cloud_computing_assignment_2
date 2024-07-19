@@ -12,8 +12,7 @@ const ProductSchema = mongoose.Schema(
         supplier: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'suppliers'
-        },
-        color : String
+        }
     }
 );
 
