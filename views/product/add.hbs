@@ -6,13 +6,13 @@
         <input class="form-control"type="text" name="productName">
 
         <label for="">Price: </label>
-        <input class="form-control" type="number" name="price"><br>
+        <input class="form-control" type="number" name="price">
 
         <label for="">Description: </label>
-        <input class="form-control" type="text" name="description"><br>
+        <input class="form-control" type="text" name="description">
 
         <label for="">Product Image: </label>
-        <input class="form-control" type="file" name="avatar" id="avatar"><br>
+        <input class="form-control" type="file" name="avatar" id="avatar">
 
         <label for="">Category: </label>
         <select class="form-control" name="category" id="">
@@ -20,7 +20,6 @@
         <option value="{{ _id }}">{{ categoryName }}</option>
         {{/each}}
         </select>
-        <br>
 
         <label for="">Supplier: </label>
         <select class="form-control" name="supplier" id="">
@@ -28,7 +27,6 @@
         <option value="{{ _id }}">{{ supplierName }}</option>
         {{/each}}
         </select>
-        <br>
         
         <input type="submit" value="Add">
     </form>

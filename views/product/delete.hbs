@@ -1,20 +1,19 @@
 <form action="/product/delete/{{products._id}}" method="post" class="register">
     <center><h1>Confirm to delete this product?</h1></center><br>
-    <label for="productName">Product Name: {{ products.productName }}</label><br>
+    <label for="productName">Product Name: {{ products.productName }}</label>
 
-    <label for="price">Price: {{ products.price }} </label><br>
+    <label for="price">Price: {{ products.price }} </label>
 
-    <label for="description">Description: {{ products.description }}</label><br>
+    <label for="description">Description: {{ products.description }}</label>
 
-    <label for="">Product Image: </label><br>
+    <label for="">Product Image: </label>
     <input type="hidden" name="avatar" value="{{ product.avatar }}">
     <center><img src="/images/{{ products.avatar }}" width="200" height="200"></center>
+
+    <label for="category">Category: {{ products.category.categoryName }}</label>
     <br>
 
-    <label for="category">Category: {{ products.category.categoryName }}</label><br>
-    <br>
-
-    <label for="supplier">Supplier: {{ products.supplier.supplierName }}</label><br>
+    <label for="supplier">Supplier: {{ products.supplier.supplierName }}</label>
     <br>
     
     <input type="submit" value="Delete">
